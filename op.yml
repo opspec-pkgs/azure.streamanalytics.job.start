@@ -41,10 +41,10 @@ inputs:
       constraints: { minLength: 1 }
       description: ISO-8601 formatted time stamp, only required when using startMode as "CustomTime"
       default: " "
-version: 1.0.0
+version: 1.1.0
 run:
   container:
-    image: { ref: 'opspecpkgs/azure.streamanalytics.job.start:1.0.0' }
+    image: { ref: 'opspecpkgs/azure.streamanalytics.job.start:1.1.0' }
     cmd: [node, /index.js]
     files: { /index.js }
     envVars:
